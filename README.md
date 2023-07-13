@@ -1,1 +1,1 @@
-$\mathscr{NPython\ -\  edu\ python\ }$
+# $\mathscr{NPython\ -\  edu\ python\ }$

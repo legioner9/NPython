@@ -1,0 +1,1 @@
+## https://pythonchik.ru/osnovy/python-try-except

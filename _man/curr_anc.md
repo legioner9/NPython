@@ -1,1 +1,1 @@
-## https://docs-python.ru/standart-library/4/
+## https://docs-python.ru/standart-library/7/

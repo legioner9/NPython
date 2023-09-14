@@ -1,15 +1,12 @@
 import sys
 
-list_args = []
-# iterating till the range
-for i in range(0, 2):
-    item = int(input())
-    # adding the element
-    list_args.append(item)
 
-print(list_args)
+def current_power(current, voltage):
+    return current**2*voltage
 
-# def current_power(current, voltage):
-#     return current**2*voltage
 
-# current_power 
+for line in sys.stdin:
+    list_from_str = [int(elem) for elem in line.split()]
+    break
+
+print(current_power(list_from_str[0], list_from_str[1]))

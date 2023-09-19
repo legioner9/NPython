@@ -1,3 +1,7 @@
+# pip install pyTelegramBotAPI
+# bot: https://t.me/elrwegBot
+# send message in bot /weather or /get_weather or /pogoda
+
 import telebot
 import requests
 import json

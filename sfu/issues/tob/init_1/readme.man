@@ -1,0 +1,5 @@
+## current version: weather.py
+
+## versions:
+- weather_v1.py
+    - /pogoda -> temperature: 15.2 windspeed: 12.2

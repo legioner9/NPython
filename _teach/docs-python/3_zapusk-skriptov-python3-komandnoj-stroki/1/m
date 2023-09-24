@@ -1,0 +1,4 @@
+#!/bin/sh
+# the m bash script and the activate symlink are created by quickinstall.py
+
+/usr/bin/python3 quickinstall.py $* --help

@@ -1,0 +1,7 @@
+typer[all]
+Markdown
+Jinja2
+chardet
+python-markdown-math
+attributedict
+mimetypes

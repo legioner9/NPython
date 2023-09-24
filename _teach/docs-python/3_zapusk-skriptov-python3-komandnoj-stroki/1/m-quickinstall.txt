@@ -1,0 +1,1 @@
+/usr/bin/python3: can't open file '/home/st/REPOBARE/_repo/NPython/_teach/docs-python/3_zapusk-skriptov-python3-komandnoj-stroki/1/quickinstall.py': [Errno 2] No such file or directory

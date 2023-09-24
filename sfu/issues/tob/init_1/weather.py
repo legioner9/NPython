@@ -3,6 +3,8 @@
 # send message in bot /weather or /get_weather or /pogoda
 
 import telebot
+from telebot import types
+
 import requests
 import json
 
@@ -51,10 +53,18 @@ def welcome_start(message):
     bot_prn_message(message, '1')
 
 
-@bot.message_handler(commands=['start'])
-def welcome_start(message):
-    bot_prn_message(message, 'Приветствую тебя user')
-    # bot.send_message(message.chat.id, 'Приветствую тебя user')
+@bot.message_handler(commands=['start'])  # создаем команду
+def start(message):
+    markup = types.InlineKeyboardMarkup()
+    button0 = types.InlineKeyboardButton(
+        "Сайт gismeteo Divnogorsk 10 days", url='https://www.gismeteo.ru/weather-divnogorsk-11843/10-days/')
+    markup.add(button0)
+    button1 = types.InlineKeyboardButton(
+        "Сайт yandex Divnogorsk 10 days", url='https://yandex.ru/pogoda/divnogorsk')
+    markup.add(button1)
+    bot.send_message(message.chat.id, "Привет, {0.first_name}! Нажми на кнопку и перейди на сайт)".format(
+        message.from_user), reply_markup=markup)
+    # print("0")
 
 
 @bot.message_handler(commands=['get_weather', 'weather', 'pogoda'])

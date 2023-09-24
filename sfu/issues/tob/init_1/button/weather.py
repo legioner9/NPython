@@ -55,6 +55,9 @@ def welcome_start(message):
 @bot.message_handler(commands=['start'])  # создаем команду
 def start(message):
     markup = types.InlineKeyboardMarkup()
+    button0 = types.InlineKeyboardButton(
+        "Сайт Хабр main", url='https://habr.com/')
+    markup.add(button0)
     button1 = types.InlineKeyboardButton(
         "Сайт Хабр", url='https://habr.com/ru/all/')
     markup.add(button1)

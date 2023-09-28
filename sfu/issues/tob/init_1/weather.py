@@ -1,6 +1,6 @@
 # pip install pyTelegramBotAPI
 # bot: https://t.me/elrwegBot
-# send message in bot /help
+# send message in bot /menu
 
 import telebot
 from telebot import types
@@ -51,7 +51,7 @@ def start(message):
 @bot.message_handler(commands=['help'])  # создаем команду
 def welcome_help(message):
     # вывод ответа на команду
-    bot_prn_message(message, 'данный бот создан в учебных целях,\nзапрашивает погоду с сайта api.open-meteo.com для вывода ответа в текстовом режиме в Красноярске по команде /pogoda,\nотображает кнопку перехода на сайт www.gismeteo.ru и кнопку перехода на сайт yandex.ru  по команде /start')
+    bot_prn_message(message, 'данный бот создан в учебных целях,\nотображает кнопку перехода на сайт www.gismeteo.ru и кнопку перехода на сайт yandex.ru  по команде /start')
 
 # обработчик команды /menu
 
@@ -60,8 +60,12 @@ def welcome_help(message):
 def welcome_menu(message):
     # вывод ответа на команду
     bot_prn_message(
-        message, '/menu - вывод всех команд\n/start - вывод интерактивных кнопок\n/pogoda - вывод погоды\n/help - вывод подсказки')
+        message, '/menu - вывод всех команд\n/start - вывод интерактивных кнопок\n/help - вывод подсказки')
 
+# контрольное сообщение в консоль
+print("start bot")
 
 # запускаем бота в сеть
 bot.polling(none_stop=True)
+
+

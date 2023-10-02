@@ -1,0 +1,1 @@
+## https://ru.hexlet.io/blog/posts/chto-takoe-flask-i-kak-na-nem-bystro-napisat-prostoy-sayt

@@ -2,7 +2,7 @@
 
 #. "$HOME/.bashrc"
 
-filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/start_check.sh"
+filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_1/start_check.sh"
 
 ARGS=($@)
 NARGS=$#
@@ -36,8 +36,8 @@ A1="$1"
 echo -e "${GREEN}\$A1 = $A1${NORMAL}" #print variable
 h() {
     echo -e "arg1:
--s start app
--c check domain 
+    -s: start app
+    -c: check domain after start in new shall
 "
 }
 

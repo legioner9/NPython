@@ -1,0 +1,3 @@
+@app.route("{str_parr_0}")
+def {str_parr_1}():
+    #{file_return}

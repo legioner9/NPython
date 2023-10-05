@@ -2,7 +2,7 @@
 
 #. "$HOME/.bashrc"
 
-filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_cr_app_py.sh"
+filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_2/.d/.sh/_cr_app_py.sh"
 
 ARGS=($@)
 NARGS=$#
@@ -51,8 +51,8 @@ f0() {
 
     local str
 
-   "${_ehh}" rm "${app_file}"
-   "${_ehh}" cp "${app_tml}" "${app_file}"
+    rm "${app_file}"
+    cp "${app_tml}" "${app_file}"
 
     "${_cr_f_}" \
             "${app_file}" \
@@ -65,8 +65,8 @@ f0() {
         "${_s3parr_}" --_str "${str}" --_del ":" --_parr str_parr
         "${_parr3e_}" str_parr
 
-       "${_ehh}" rm "${insert_decfn}"
-       "${_ehh}" cp "${decfn}" "${insert_decfn}"
+        rm "${insert_decfn}"
+        cp "${decfn}" "${insert_decfn}"
 
         file_return=""${curr_dir}/${str_parr[1]}".curr"
 

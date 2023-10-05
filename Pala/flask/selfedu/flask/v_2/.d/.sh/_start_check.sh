@@ -2,7 +2,7 @@
 
 #. "$HOME/.bashrc"
 
-filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_start_check.sh"
+filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_2/.d/.sh/_start_check.sh"
 
 ARGS=($@)
 NARGS=$#
@@ -88,8 +88,8 @@ if [ "$A1" == "-c" ]; then
 
             local str_parr=()
 
-           "${_ehh}" "${_s3parr_}" --_str "${str}" --_del ":" --_parr str_parr
-           "${_ehh}" "${_parr3e_}" str_parr
+            "${_s3parr_}" --_str "${str}" --_del ":" --_parr str_parr
+            "${_parr3e_}" str_parr
 
             local str_parr_0=${str_parr[0]}
             local str_parr_1=${str_parr[1]}
@@ -97,7 +97,7 @@ if [ "$A1" == "-c" ]; then
             local file_pre="${pre_dir}/${str_parr_1}.pre"
             local file_res="${res_dir}/${str_parr_1}.res"
 
-            "${_ehh}" curl -o "${file_res}" http://127.0.0.1:5000"${str_parr_0}"
+            ehh curl -o "${file_res}" http://127.0.0.1:5000"${str_parr_0}"
 
             if ! diff -q "${file_res}" "${file_pre}" >/dev/null; then
                 plt_info "fail ${str_parr_1}.html"

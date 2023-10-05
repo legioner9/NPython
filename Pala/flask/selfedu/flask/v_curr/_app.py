@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     return "index page"
 
+@app.route("/index")
+def index():
+    return "index page"
+
 @app.route("/about")
 def about():
     return "<h1>About site</h1>"

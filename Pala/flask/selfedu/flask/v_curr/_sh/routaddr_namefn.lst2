@@ -1,4 +1,4 @@
 #<rout_address>:<name_function>:[default <file_content> = <name_function>.cont]
-/:index
+/:home
 /index:index
 /about:about

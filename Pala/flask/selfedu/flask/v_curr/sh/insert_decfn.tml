@@ -1,4 +1,0 @@
-@app.route("/about")
-def about():
-    return "<h1>About site</h1>"
-    #{file_return}

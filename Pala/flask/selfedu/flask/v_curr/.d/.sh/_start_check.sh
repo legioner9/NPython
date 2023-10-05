@@ -2,7 +2,7 @@
 
 #. "$HOME/.bashrc"
 
-filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/sh/_cr_app_py.sh"
+filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_start_check.sh"
 
 ARGS=($@)
 NARGS=$#
@@ -32,29 +32,57 @@ fi
 #----------------------------------------------------------------------
 #-------------------------------------
 #-------------------------------
-f0() {
-    local app_dir="${rdir}"/..
-    local str
+A1="$1"
 
-    for str in $(f2e routaddr_namefn.lst2); do
-        local str_parr=()
+sh_dir=${rdir}
+app_dir=${rdir}/../..
 
-        s3parr_ --_str "${str}" --_del ":" --_parr str_parr
-        parr3e_ str_parr
+echo -e "${GREEN}\$A1 = $A1${NORMAL}" #print variable
 
-        rm insert_decfn.tml
-        cp decfn.tml insert_decfn.tml
-        cr_f_ insert_decfn.tml --vi0 "${str_parr[0]}" --vr0 "{str_parr_0}" \
-            --vi1 "${str_parr[1]}" --vr1 "{str_parr_1}" \
-            --fi0 "${str_parr[1]}".curr --fr0 "{file_return}"
-
-        sed -i -e 's/|/ /g' insert_decfn.tml
-
-        ehh cat insert_decfn.tml
-    done
+h() {
+    echo -e "arg1:
+    -s: start app
+    -c: check domain after start in new shall
+"
 }
 
-f0
+fh() {
+    plt_info "arg1 NOT:
+-s start app,
+-c check domain
+"
+}
+
+h
+
+if [ "$A1" == "-s" ]; then
+
+    echo -e "${HLIGHT}--- start app mode ---${NORMAL}" #start files
+    ehh python3 "${app_dir}"/app.py
+    return 0
+
+fi
+
+if [ "$A1" == "-c" ]; then
+
+    echo -e "${HLIGHT}--- check mode ---${NORMAL}"
+
+    curl -o "${sh_dir}/index.res" http://127.0.0.1:5000
+    curl -o "${sh_dir}/about.res" http://127.0.0.1:5000/about
+
+    if ! diff -q "${sh_dir}/index.res" "${sh_dir}/index.curr" >/dev/null; then
+        plt_info "fail index.html"
+    fi
+
+    if ! diff -q "${sh_dir}/about.res" "${sh_dir}/about.curr" >/dev/null; then
+        plt_info "fail about.html"
+    fi
+
+    return 0
+
+fi
+
+fh
 
 #{body}
 #-------------------------------

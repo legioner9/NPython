@@ -33,8 +33,10 @@ fi
 #-------------------------------------
 #-------------------------------
 
-f0() {
-    echo -e "${HLIGHT}--- f0 ---${NORMAL}" #start files
+sh_cr_app_py() {
+    echo -e "${HLIGHT}--- sh_cr_app_py ---${NORMAL}" #start files
+
+    local rdir="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh"
 
     local app_dir="${rdir}"/../..
     local tml_dir="${rdir}"/../.tml
@@ -87,7 +89,7 @@ f0() {
     sed -i -e 's/{}/ /g' "${app_file}"
 }
 
-f0
+sh_cr_app_py
 
 #{body}
 #-------------------------------

@@ -88,8 +88,8 @@ if [ "$A1" == "-c" ]; then
 
             local str_parr=()
 
-           "${_ehh}" "${_s3parr_}" --_str "${str}" --_del ":" --_parr str_parr
-           "${_ehh}" "${_parr3e_}" str_parr
+            "${_ehh}" "${_s3parr_}" --_str "${str}" --_del ":" --_parr str_parr
+            "${_ehh}" "${_parr3e_}" str_parr
 
             local str_parr_0=${str_parr[0]}
             local str_parr_1=${str_parr[1]}

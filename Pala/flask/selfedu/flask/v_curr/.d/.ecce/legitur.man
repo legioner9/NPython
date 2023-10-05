@@ -1,5 +1,7 @@
 # "${app_dir}" - dir with app.py
 
+# rename path in "${app_dir}" to actual (as v_curr -> v_3)
+
 ## create app.py
 
     . "${app_dir}"/.d/.sh/_cr_app_py.sh

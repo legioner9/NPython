@@ -48,10 +48,25 @@ ${NORMAL}" #sistem info mesage
     arr+=("correct routaddr_namefn.lst2")
     res+=("edit_ ${rdir}/.d/.lst2/routaddr_namefn.lst2")
 
+    arr+=("correct .d/.ecce/ligitur.man")
+    res+=("edit_ ${rdir}/.d/.ecce/legitur.man")
+    # REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.ecce/legitur.man
+
     # arr+=("aaaaaaaaa")
     # res+=("bbbbbbbbb")
     # arr+=("aaaaaaaaa")
     # res+=("bbbbbbbbb")
+    # arr+=("aaaaaaaaa")
+    # res+=("bbbbbbbbb")
+    # arr+=("aaaaaaaaa")
+    # res+=("bbbbbbbbb")
+    # arr+=("aaaaaaaaa")
+    # res+=("bbbbbbbbb")
+    # arr+=("aaaaaaaaa")
+    # res+=("bbbbbbbbb")
+    # arr+=("aaaaaaaaa")
+    # res+=("bbbbbbbbb")
+
     if [ $(num_01 $1) -eq 1 ] && [ $1 -le ${#arr[@]} ]; then
         num_res=$(($1 - 1))
         ${res[${num_res}]}

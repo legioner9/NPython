@@ -2,7 +2,7 @@
 
 #. "$HOME/.bashrc"
 
-filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_cr_app_py.sh"
+filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_3/.d/.sh/_cr_app_py.sh"
 
 ARGS=($@)
 NARGS=$#
@@ -36,7 +36,7 @@ fi
 sh_cr_app_py() {
     echo -e "${HLIGHT}--- sh_cr_app_py ---${NORMAL}" #start files
 
-    local rdir="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh"
+    local rdir="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_3/.d/.sh"
 
     local app_dir="${rdir}"/../..
     local tml_dir="${rdir}"/../.tml

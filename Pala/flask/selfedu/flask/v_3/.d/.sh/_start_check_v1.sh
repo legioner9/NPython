@@ -2,7 +2,7 @@
 
 #. "$HOME/.bashrc"
 
-filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_start_check.sh"
+filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_3/.d/.sh/_start_check.sh"
 
 ARGS=($@)
 NARGS=$#

@@ -2,7 +2,7 @@
 
 #. "${HOME}/.bashrc"
 fntmp_25a123820c() {
-    local filename=${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_cr_app_py.sh
+    local filename=${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_3/.d/.sh/_cr_app_py.sh
 
     local ARGS=($@)
     if [ "${ARGS[0]}" == "-h" ]; then

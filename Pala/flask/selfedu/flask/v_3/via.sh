@@ -3,7 +3,7 @@
 #. "${HOME}/.bashrc"
 fntmp_f76e523211() {
 
-    local filename=${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_curr/via.sh
+    local filename=${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_3/via.sh
 
     local ARGS=($@)
     if [ "${ARGS[0]}" == "-h" ]; then
@@ -39,8 +39,8 @@ ${NORMAL}" #sistem info mesage
     res+=(". ${rdir}/.d/.sh/_cr_app_py.sh")
 
     # arr+=("deletion + creation + start app.py")
-    # res+=(". ${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_cr_app_py.sh ;\
-    # . ${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/_start_check.sh -s")
+    # res+=(". ${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_3/.d/.sh/_cr_app_py.sh ;\
+    # . ${PATH_CURR_REPO}/NPython/Pala/flask/selfedu/flask/v_3/.d/.sh/_start_check.sh -s")
 
     arr+=("check pages server")
     res+=(". ${rdir}/.d/.sh/_start_check.sh -c")

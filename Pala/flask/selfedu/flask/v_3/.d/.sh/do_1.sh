@@ -2,7 +2,7 @@
 
 #. "$HOME/.bashrc"
 
-filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_curr/.d/.sh/do_1.sh"
+filename="/home/st/REPOBARE/_repo/NPython/Pala/flask/selfedu/flask/v_3/.d/.sh/do_1.sh"
 
 ARGS=($@)
 echo -e "${GREEN}\${ARGS[@]} = ${ARGS[*]}${NORMAL}" #print variable

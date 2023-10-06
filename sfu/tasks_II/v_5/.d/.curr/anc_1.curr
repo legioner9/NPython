@@ -1,0 +1,1 @@
+{}{}{}{}return render_template('ancs/anc_1.html', title="anc_1", menu = menu)

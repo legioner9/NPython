@@ -1,6 +1,7 @@
 {}
 @app.route("/about")
 def about():
-{}{}{}{}return "<h1>About site</h1>"
+{}{}{}{}print( url_for('about') )
+{}{}{}{}return render_template('about.html', title="О сайте", menu = menu)
 #{file_return}
 {}

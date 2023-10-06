@@ -1,8 +1,10 @@
 #{anc_head}
 
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
+
+menu = ["Установка", "Первое приложение", "Обратная связь"]
 
 #{insert_decfn}
 

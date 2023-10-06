@@ -10,7 +10,7 @@ fntmp_f76e523211() {
         echo -e "${BLUE} 
 help from $filename :
 1) menu flow for app.py - start, rebuild, check and mute routs
-2) 
+2) first using url_for
 ${NORMAL}" #sistem info mesage
         return 0
     fi

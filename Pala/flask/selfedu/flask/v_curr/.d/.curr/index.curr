@@ -1,1 +1,2 @@
-{}{}{}{}return "index page"
+{}{}{}{}print( url_for('index') )
+{}{}{}{}return render_template('index.html', title="Про Flask", menu = menu)

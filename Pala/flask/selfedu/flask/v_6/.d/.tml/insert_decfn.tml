@@ -1,0 +1,6 @@
+{}
+@app.route("/about")
+def about():
+{}{}{}{}return render_template('index.html', title="О сайте", menu = menu)
+#{file_return}
+{}

@@ -81,6 +81,8 @@ ${NORMAL}" #sistem info mesage
             local file_pre="${pre_dir}/${str_parr_1}.pre"
             local file_res="${res_dir}/${str_parr_1}.res"
 
+            : >"${file_res}"
+
             "${_ehh}" curl -o "${file_res}" http://127.0.0.1:5000"${str_parr_0}"
 
             if ! diff -q "${file_res}" "${file_pre}" >/dev/null; then

@@ -1,26 +1,24 @@
-# https://proproprogs.ru/flask/flask-chto-eto-takoe-wsgi-prilozhenie 
+# https://proproprogs.ru/flask/ispolzovanie-shablonov
 #{anc_head}
 
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
+menu = ["Установка", "Первое приложение", "Обратная связь"]
+
  
 @app.route("/")
-def home():
-    return "index page"
-#{file_return}
- 
- 
-@app.route("/index")
 def index():
-    return "index page"
+    print( url_for('index') )
+    return render_template('index.html', title="Про Flask", menu = menu)
 #{file_return}
  
  
 @app.route("/about")
 def about():
-    return "<h1>About site</h1>"
+    print( url_for('about') )
+    return render_template('about.html', title="О сайте", menu = menu)
 #{file_return}
  
 #{insert_decfn}

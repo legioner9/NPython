@@ -1,0 +1,73 @@
+# "${app_dir}" - dir with app.py
+
+# rename path in "${app_dir}" to actual (as v_curr -> v_3)
+
+## create app.py
+
+    . "${app_dir}"/.d/.sh/_cr_app_py.sh
+
+## start sever
+
+    . "${app_dir}"/.d/.sh/_start_check.sh -s
+
+## create + start sever
+
+    . "${app_dir}"/.d/.sh/do_1.sh
+
+## test server after start server
+
+    . "${app_dir}"/.d/.sh/_start_check.sh -c
+
+## file with lst2 rows: r1, r2
+
+    cat "${app_dir}"/.d/.lst2/routaddr_namefn.lst2
+
+
+## content of dir \${app_dir}:
+
+- ${app_dir}/app.py :: maie py file
+- ${app_dir}/app.py.exa :: example of maie py file
+
+## content of dir \${curr_dir}: "${curr_dir}"/.d/.curr
+
+
+
+## content of dir \${tml_dir}: "${app_dir}"/.d/.tml
+
+- ${tml_dir}/anc_head.tml :: first comment as anc, ...
+
+```py
+# https://proproprogs.ru/flask/flask-chto-eto-takoe-wsgi-prilozhenie
+```
+- ${tml_dir}/app.tml :: for app.py ::
+
+```py
+#{anc_head}
+
+from flask import Flask
+
+app = Flask(__name__)
+
+#{insert_decfn}
+
+if __name__ == "__main__":
+    app.run(debug=True)
+````
+- ${tml_dir}/decfn.tml :: for decorator with func_router ::
+
+```py
+    @app.route(<r1>)
+    def <r2>():
+    #{file_return}
+```
+
+- file_return is ${curr_dir}/<r2>.curr ::
+  
+```
+{}{}{}{}return "<content for r2>"
+```
+- {} substituter of python space
+
+
+    
+

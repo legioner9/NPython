@@ -1,0 +1,6 @@
+{}
+@app.route("/about")
+def about():
+{}{}{}{}return "<h1>Про Flask</h1>"
+#{file_return}
+{}

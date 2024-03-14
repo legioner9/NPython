@@ -1,0 +1,7 @@
+``` bash
+$ codium 
+[main 2024-02-27T07:50:56.442Z] update#setState disabled
+[main 2024-02-27T07:50:56.443Z] update#ctor - updates are disabled as there is no update URL
+libva error: /usr/lib64/dri/iHD_drv_video.so init failed
+[main 2024-02-27T07:51:54.811Z] Extension host with pid 50102 exited with code: 0, signal: unknown.
+```
